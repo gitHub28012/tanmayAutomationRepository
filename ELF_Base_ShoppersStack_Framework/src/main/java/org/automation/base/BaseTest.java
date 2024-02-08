@@ -75,7 +75,7 @@ public abstract class BaseTest extends InitObjects {
 		url=readData.readDataFromPropertyFile("url");
 		driver.get(url);
 		loginPage=new Login_Page(driver);
-	  //explicitwait.until(ExpectedConditions.visibilityOf(loginPage.getWelcome_Page_LoginButton()));
+	    explicitwait.until(ExpectedConditions.visibilityOf(loginPage.getWelcome_Page_LoginButton()));
 	    loginPage.getWelcome_Page_LoginButton().click();
 		System.out.println("Login as!!");
 		Scanner sc = new Scanner(System.in);

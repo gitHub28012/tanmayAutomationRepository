@@ -17,13 +17,13 @@ public class Merchant_Page extends BasePage {
 	
 	@FindBy(xpath = "//button[@aria-label='open drawer']")
 	private WebElement hamburgerIcon;
-	@FindBy(xpath = "(//div[contains(@class,'MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0')])[1]")
+	@FindBy(xpath = "//span[text()='Product ']/ancestor::div[@id='panel1a-header']")
 	private WebElement productIcon;
 	@FindBy(xpath = "//span[text()='Add Product']")
 	private WebElement addProductLink;
 	@FindBy(xpath = "//span[text()='View All Products']")
 	private WebElement viewAllProductsLink;
-	@FindBy(xpath = "(//div[contains(@class,'MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0')])[2]")
+	@FindBy(xpath = "//span[text()='Account']/ancestor::div[@id='panel1a-header']")
     private WebElement accountIcon;
 	@FindBy(xpath = "//span[text()='view profile']")
 	private WebElement viewProfileLink;
@@ -178,7 +178,7 @@ public class Merchant_Page extends BasePage {
 			}
 			
 		}
-		offerTB.clear();
+		//offerTB.clear();
 		offerTB.sendKeys(off);
 	}
 	
@@ -190,15 +190,17 @@ public class Merchant_Page extends BasePage {
 		thumbnailImagesTB.sendKeys(thumbn);
 	}
 	
-	public void productDescriptionLinkAndSearchTag(String desc,String link,String tag)
+	public void productDescriptionLinkAndSearchTag(String desc,String link,String tag) throws InterruptedException
 	{
 	
 		descriptionTA.sendKeys(desc);
 		ProductImagesTB.sendKeys(link);
 		plusIcon.click();
+		Thread.sleep(2000);
 		searchTagsTB.sendKeys(tag);
+		Thread.sleep(2000);
 		plusSearchTagIcon.click();
-
+		Thread.sleep(2000);
 	}
 	
 	public void saveAndSubmitProduct()
