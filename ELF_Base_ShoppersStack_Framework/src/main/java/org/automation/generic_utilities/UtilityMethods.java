@@ -51,7 +51,7 @@ public class UtilityMethods implements FrameworkConstants {
 		}
 	}
 
-	public static void captureScreen(WebDriver driver, ITestResult result) {
+	public  void captureScreen(WebDriver driver, ITestResult result) {
 		TakesScreenshot takeScreenShot = (TakesScreenshot)driver;
 		File tempFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
 		File destFile = new File(SCREENSHOT_PATH + result.getName()+".png");

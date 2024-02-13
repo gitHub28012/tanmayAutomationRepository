@@ -1,5 +1,6 @@
 package org.automation.element_repository;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.automation.base.BasePage;
@@ -7,6 +8,8 @@ import org.automation.generic_utilities.InitObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Merchant_Page extends BasePage {
 
@@ -198,14 +201,20 @@ public class Merchant_Page extends BasePage {
 		plusIcon.click();
 		Thread.sleep(2000);
 		searchTagsTB.sendKeys(tag);
-		Thread.sleep(2000);
-		plusSearchTagIcon.click();
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
+//		plusSearchTagIcon.click();
+//		Thread.sleep(2000);
+		InitObjects initClass = new InitObjects();
+		WebDriverWait wait = initClass.explicitwait=new WebDriverWait(driver,Duration.ofSeconds(EXPLICIT_TIMEOUT));
+		wait.until(ExpectedConditions.elementToBeClickable(plusSearchTagIcon)).click();
 	}
 	
 	public void saveAndSubmitProduct()
 	{
-		saveProductButton.click();
+		InitObjects initClass = new InitObjects();
+		WebDriverWait wait = initClass.explicitwait=new WebDriverWait(driver,Duration.ofSeconds(EXPLICIT_TIMEOUT));
+		wait.until(ExpectedConditions.elementToBeClickable(saveProductButton)).click();
+	//	saveProductButton.click();
 		submitProductsButton.click();
 	}
 	

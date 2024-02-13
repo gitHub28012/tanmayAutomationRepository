@@ -16,7 +16,8 @@ public abstract class BasePage extends InitObjects{
 	
 	//================Web elements or Property================
 	
-	@FindBy(xpath="//button[@name='loginBtn']")
+//	@FindBy(xpath="//button[@id='loginBtn']")
+	@FindBy(id = "loginBtn")
 	private WebElement Welcome_Page_LoginButton;
 	@FindBy(partialLinkText="Men")
 	private WebElement MenCategoryLink;

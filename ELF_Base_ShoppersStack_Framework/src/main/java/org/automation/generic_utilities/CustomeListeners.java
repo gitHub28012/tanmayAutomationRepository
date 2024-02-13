@@ -23,8 +23,9 @@ public class CustomeListeners extends BaseTest implements ITestListener{
 
 	public void onTestFailure(ITestResult result) {	
 		Reporter.log(result.getMethod().getMethodName()+"TestCase falied and ScreenShot taken!!",true);
-		UtilityMethods.captureScreen(driver, result);
-	    //initClass.getUtilityMethods().captureScreen(static_driver_ref, result);
+	//	UtilityMethods.captureScreen(driver, result);
+	    InitObjects initClass = new InitObjects();
+	    initClass.getUtilityMethods().captureScreen(driver, result);
 	}		
 
 	public void onTestSkipped(ITestResult result) {					

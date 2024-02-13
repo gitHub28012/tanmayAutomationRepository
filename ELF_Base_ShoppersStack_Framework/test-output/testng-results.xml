@@ -14,12 +14,12 @@
       <![CDATA[addProdctToShoppersStackTestCase falied and ScreenShot taken!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-02-08T11:25:24 IST" name="Default suite" finished-at="2024-02-08T11:26:08 IST" duration-ms="43670">
+  <suite started-at="2024-02-13T10:58:21 IST" name="Default suite" finished-at="2024-02-13T10:59:57 IST" duration-ms="95423">
     <groups>
     </groups>
-    <test started-at="2024-02-08T11:25:24 IST" name="Default test" finished-at="2024-02-08T11:26:08 IST" duration-ms="43670">
+    <test started-at="2024-02-13T10:58:21 IST" name="Default test" finished-at="2024-02-13T10:59:57 IST" duration-ms="95423">
       <class name="org.automation.test_scripts.MerchantTestCase">
-        <test-method is-config="true" signature="browserSetUp(java.lang.String)[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-08T11:25:24 IST" name="browserSetUp" finished-at="2024-02-08T11:25:26 IST" duration-ms="2114" status="PASS">
+        <test-method is-config="true" signature="browserSetUp(java.lang.String)[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-13T10:58:21 IST" name="browserSetUp" finished-at="2024-02-13T10:58:23 IST" duration-ms="2068" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,33 +36,33 @@
             </line>
           </reporter-output>
         </test-method> <!-- browserSetUp -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-08T11:25:26 IST" name="loginToApplication" finished-at="2024-02-08T11:25:53 IST" duration-ms="26723" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-13T10:58:23 IST" name="loginToApplication" finished-at="2024-02-13T10:58:43 IST" duration-ms="19695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="addProdctToShoppersStack()[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-08T11:25:53 IST" name="addProdctToShoppersStack" finished-at="2024-02-08T11:26:04 IST" duration-ms="10903" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="addProdctToShoppersStack()[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-13T10:58:43 IST" name="addProdctToShoppersStack" finished-at="2024-02-13T10:59:53 IST" duration-ms="69726" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <span class="MuiTouchRipple-root"></span> is not clickable at point (257, 638). Other element would receive the click: <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
-  (Session info: chrome=121.0.6167.160)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Submit Products']"}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.14.0', revision: 'e5a96349ce'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f598f1a33c07b1a03b3367e2969f1821, clickElement {id=BCD662E88E749EC321E6D9CF85D37BCA_element_186}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.160, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49696/devtoo..., se:cdpVersion: 121.0.6167.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f598f1a33c07b1a03b3367e2969f1821)] -> xpath: //input[@id='searchTags']/ancestor::div[contains(@class,'MuiInputBase-roo')]/descendant::span/following-sibling::span]
-Session ID: f598f1a33c07b1a03b3367e2969f1821]]>
+Command: [d4a0aa06c2056798e00623b37cca54ba, findElement {using=xpath, value=//button[text()='Submit Products']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63382/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d4a0aa06c2056798e00623b37cca54ba]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="MuiTouchRipple-root"></span> is not clickable at point (257, 638). Other element would receive the click: <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
-  (Session info: chrome=121.0.6167.160)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Submit Products']"}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.14.0', revision: 'e5a96349ce'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f598f1a33c07b1a03b3367e2969f1821, clickElement {id=BCD662E88E749EC321E6D9CF85D37BCA_element_186}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.160, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49696/devtoo..., se:cdpVersion: 121.0.6167.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f598f1a33c07b1a03b3367e2969f1821)] -> xpath: //input[@id='searchTags']/ancestor::div[contains(@class,'MuiInputBase-roo')]/descendant::span/following-sibling::span]
-Session ID: f598f1a33c07b1a03b3367e2969f1821
+Command: [d4a0aa06c2056798e00623b37cca54ba, findElement {using=xpath, value=//button[text()='Submit Products']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63382/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d4a0aa06c2056798e00623b37cca54ba
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -75,16 +75,15 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at org.automation.element_repository.Merchant_Page.productDescriptionLinkAndSearchTag(Merchant_Page.java:201)
-at org.automation.test_scripts.MerchantTestCase.addProdctToShoppersStack(MerchantTestCase.java:34)
+at org.automation.element_repository.Merchant_Page.saveAndSubmitProduct(Merchant_Page.java:218)
+at org.automation.test_scripts.MerchantTestCase.addProdctToShoppersStack(MerchantTestCase.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,7 +114,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Execution of the test [addProdctToShoppersStack] started]]>
@@ -125,11 +124,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- addProdctToShoppersStack -->
-        <test-method is-config="true" signature="logoutOfApplication()[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-08T11:26:04 IST" name="logoutOfApplication" finished-at="2024-02-08T11:26:07 IST" duration-ms="3404" status="PASS">
+        <test-method is-config="true" signature="logoutOfApplication()[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-13T10:59:53 IST" name="logoutOfApplication" finished-at="2024-02-13T10:59:56 IST" duration-ms="3397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutOfApplication -->
-        <test-method is-config="true" signature="browserTearDown()[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-08T11:26:07 IST" name="browserTearDown" finished-at="2024-02-08T11:26:08 IST" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="browserTearDown()[pri:0, instance:org.automation.test_scripts.MerchantTestCase@f09733f]" started-at="2024-02-13T10:59:56 IST" name="browserTearDown" finished-at="2024-02-13T10:59:57 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTearDown -->
