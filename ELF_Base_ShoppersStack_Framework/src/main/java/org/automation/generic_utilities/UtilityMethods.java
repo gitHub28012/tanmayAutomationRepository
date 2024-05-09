@@ -20,6 +20,11 @@ import com.google.common.io.Files;
 
 public class UtilityMethods implements FrameworkConstants {
 	
+	/***
+	 * this method used control speific window
+	 * @param driver
+	 * @param title
+	 */
 	public void switchToASpecificTitleWindow(WebDriver driver,String title)
 	{
 		String parentWindowId = driver.getWindowHandle();
@@ -121,5 +126,9 @@ public class UtilityMethods implements FrameworkConstants {
 	   ele.click();	
 	}
 	
+	public void dismissConfirmation(WebDriver driver)
+	{
+		driver.switchTo().alert().dismiss();
 	
+	}
 }
