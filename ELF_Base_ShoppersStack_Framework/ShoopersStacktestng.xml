@@ -9,7 +9,7 @@
       <class name="org.automation.test_scripts.AdminTestCase2"/>
       <class name="org.automation.test_scripts.MerchantTestCase"/>
       <class name="org.automation.test_scripts.ShopperProductSearch"/>
-      <class name="org.automation.test_scripts.CartTestCase"/>
+      <class name="org.automation.test_scripts.CartTest"/>
       
     </classes>
   </test> <!-- Test -->
