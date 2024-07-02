@@ -133,4 +133,9 @@ public class UtilityMethods implements FrameworkConstants {
 		driver.switchTo().alert().dismiss();
 	
 	}
+	
+	public static String sentInputThroughCmd(String cmdProperty)
+	{
+	   return System.getProperty(cmdProperty);
+	}
 }
