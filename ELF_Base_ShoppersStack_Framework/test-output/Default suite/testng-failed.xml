@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.automation.test_scripts.MerchantTestCase">
+      <class name="org.automation.test_scripts.AdminTestCase1">
         <methods>
+          <include name="reportsTearDown"/>
           <include name="logoutOfApplication"/>
           <include name="loginToApplication"/>
-          <include name="addProdctToShoppersStack"/>
+          <include name="reporterSetup"/>
+          <include name="unblockMerchantByAdmin"/>
           <include name="browserTearDown"/>
           <include name="browserSetUp"/>
         </methods>
-      </class> <!-- org.automation.test_scripts.MerchantTestCase -->
+      </class> <!-- org.automation.test_scripts.AdminTestCase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

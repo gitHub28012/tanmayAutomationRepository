@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 @Listeners(CustomeListeners.class)
-public class CartTestCase extends BaseTest{
+public class CartTest extends BaseTest{
 
 	
 	@Test

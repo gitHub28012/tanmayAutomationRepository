@@ -16,6 +16,7 @@ public class Login_Page extends BasePage{
 
 	
 	//================Web elements or Property================
+	public String loginAs;
 	
 	@FindBy(xpath = "//button[text()='Shopper Login']")
 	private WebElement ShopperLoginButton;
@@ -53,10 +54,14 @@ public class Login_Page extends BasePage{
 	}
 	
 	
+	 
+	
+	
 	//operational Methods 
 	public void login(String email,String password,String loginAs)
 	{
-	
+	  
+	  this.loginAs=System.getProperty(loginAs);
 	  if(loginAs.equalsIgnoreCase("Shopper"))
 	  {
 		  ShopperLoginButton.click();
