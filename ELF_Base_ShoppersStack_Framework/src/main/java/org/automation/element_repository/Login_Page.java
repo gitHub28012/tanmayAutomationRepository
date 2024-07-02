@@ -61,7 +61,7 @@ public class Login_Page extends BasePage{
 	public void login(String email,String password,String loginAs)
 	{
 	  
-	  this.loginAs=System.getProperty(loginAs);
+	//  this.loginAs=System.getProperty(loginAs);
 	  if(loginAs.equalsIgnoreCase("Shopper"))
 	  {
 		  ShopperLoginButton.click();

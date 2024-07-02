@@ -84,10 +84,10 @@ public abstract class BaseTest extends InitObjects {
 		explicitwait.until(ExpectedConditions.visibilityOf(loginPage.getWelcome_Page_LoginButton()));
 		loginPage.getWelcome_Page_LoginButton().click();
 		System.out.println("Login as!!");
-	//	Scanner sc = new Scanner(System.in);
-		String loginAs = System.getProperty("loginAs");
+	    Scanner sc = new Scanner(System.in);
+	//	String loginAs = System.getProperty("loginAs");
 		loginPage.login(readData.readDataFromPropertyFile("email"), readData.readDataFromPropertyFile("password"),
-			loginAs);
+			sc.next());
 
 	}
 

@@ -21,7 +21,7 @@ import com.google.common.io.Files;
 public class UtilityMethods implements FrameworkConstants {
 	
 	/***
-	 * this method used control speific window
+	 * this method used control specific window
 	 * @param driver
 	 * @param title
 	 */
