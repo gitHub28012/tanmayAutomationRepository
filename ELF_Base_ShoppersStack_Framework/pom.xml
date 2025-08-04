@@ -72,6 +72,18 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<mainClass>/ELF_Base_ShoppersStack_Framework/src/test/java/org/automation/test_scripts/CartTest
+															1+
+					</mainClass>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 

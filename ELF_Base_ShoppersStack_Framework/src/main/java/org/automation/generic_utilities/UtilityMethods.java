@@ -134,8 +134,8 @@ public class UtilityMethods implements FrameworkConstants {
 	
 	}
 	
-	public static String sentInputThroughCmd(String cmdProperty)
+	public static String sentInputThroughCmd()
 	{
-	   return System.getProperty(cmdProperty);
+	   return System.getProperty("loginAs");
 	}
 }

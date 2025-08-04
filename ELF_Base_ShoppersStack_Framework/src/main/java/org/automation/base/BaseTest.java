@@ -85,10 +85,17 @@ public abstract class BaseTest extends InitObjects {
 		loginPage.getWelcome_Page_LoginButton().click();
 		System.out.println("Login as!!");
 	    Scanner sc = new Scanner(System.in);
-	//    String loginAs = new InitObjects().getUtilityMethods().sentInputThroughCmd("loginAs");
+	 //   String loginAs = new InitObjects().getUtilityMethods().sentInputThroughCmd();
 	//	String loginAs = System.getProperty("loginAs");
+	    String data=sc.next();
+	    try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		loginPage.login(readData.readDataFromPropertyFile("email"), readData.readDataFromPropertyFile("password"),
-			sc.next());
+			data);
 
 	}
 
